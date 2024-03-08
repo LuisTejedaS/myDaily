@@ -1,0 +1,104 @@
+.title {
+    margin: 0 0 1rem;
+    line-height: 1.15;
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.primaryButton {
+    margin: 20px;
+    background-color: #f5f5f5;
+    color: black;
+    border: 2px solid #f5f5f5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.primaryButtonCreate {
+    background-color: #144d2e;
+}
+
+.disabled {
+    cursor: not-allowed;
+    background-color: #5a5858;
+}
+
+.dailyContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.dailyControls {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.dailyControlsError {
+    background-color: #e67a7a;
+}
+
+.loader {
+    width: 60px;
+    aspect-ratio: 4;
+    background: radial-gradient(circle closest-side, #000 90%, #0000) 0/calc(100%/3) 100% space;
+    clip-path: inset(0 100% 0 0);
+    animation: l1 1s steps(4) infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes l1 {
+    to {
+        clip-path: inset(0 -34% 0 0)
+    }
+}
+
+.dailyEntry {
+    display: flex;
+    justify-content: space-between;
+    height: 148px;
+}
+
+.userInput {
+    width: 200vw;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    resize: none;
+}
+
+.dailiesContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.singleDailyContainer {
+    display: flex;
+}
+
+.singleDailyContentLabel {
+    margin-left: 3%;
+}
+
+.singleDailyContent {
+    width: 50vw;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    resize: none;
+}
